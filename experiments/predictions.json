@@ -1,0 +1,5959 @@
+{
+  "scene_01": {
+    "query": "recommend calm instrumental music for studying",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4915",
+          "title": "Study Music Project：Music For The Mind",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2780",
+          "title": "Oasis",
+          "artist": "Guitarra Azul",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3009",
+          "title": "Remember Me",
+          "artist": "Kozoro",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4079",
+          "title": "Ultimate Classical Piano",
+          "artist": "Various.Artists",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2799",
+          "title": "River Flows in You",
+          "artist": "Jasper Forks",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_4915",
+          "title": "Study Music Project：Music For The Mind",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4079",
+          "title": "Ultimate Classical Piano",
+          "artist": "Various.Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4226",
+          "title": "Easy-Listening Piano Classics: J.S.Bach",
+          "artist": "Various Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3309",
+          "title": "Piano and Violin Duet",
+          "artist": "Brian Crain",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4915",
+          "title": "Study Music Project：Music For The Mind",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8126",
+          "title": "Max Richter: Retrospective",
+          "artist": "Max Richter",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4224",
+          "title": "Insight III",
+          "artist": "Julien Marchal",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4406",
+          "title": "Dreaming of Summer",
+          "artist": "Robin Spielberg",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "scene_02": {
+    "query": "music for running and exercise",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_5087",
+          "title": "Dreamer On The Run",
+          "artist": "",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6380",
+          "title": "Running",
+          "artist": "Jessie Ware",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1261",
+          "title": "Run - Japanese Ver. -（）",
+          "artist": "BTS",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_9499",
+          "title": "Run",
+          "artist": "Snow Patrol",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5185",
+          "title": "We, Burning Giraffes",
+          "artist": "(The) Slowest Runner (In All The World)",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_548",
+          "title": "Stronger",
+          "artist": "Kelly Clarkson",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1478",
+          "title": "Eye of the Tiger",
+          "artist": "Survivor",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_5087",
+          "title": "Dreamer On The Run",
+          "artist": "",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1261",
+          "title": "Run - Japanese Ver. -（）",
+          "artist": "BTS",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7975",
+          "title": "Step Up",
+          "artist": "Original Soundtrack",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8709",
+          "title": "Running Horse",
+          "artist": "The Faz., FAZI",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9578",
+          "title": "Black Swan",
+          "artist": "Athlete",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1261",
+          "title": "Run - Japanese Ver. -（）",
+          "artist": "BTS",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7975",
+          "title": "Step Up",
+          "artist": "Original Soundtrack",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5087",
+          "title": "Dreamer On The Run",
+          "artist": "",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9578",
+          "title": "Black Swan",
+          "artist": "Athlete",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8709",
+          "title": "Running Horse",
+          "artist": "The Faz., FAZI",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "scene_03": {
+    "query": "songs for sleep and bedtime",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2754",
+          "title": "Bedtime Story",
+          "artist": "Wu Jian Hui",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1103",
+          "title": "Bedtime Stories",
+          "artist": "Madonna",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3952",
+          "title": "Lady Sleep",
+          "artist": "Maximilian Hecker",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4452",
+          "title": "Sweet Dreams & Starlight",
+          "artist": "David Nevue",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_254",
+          "title": "Jay Chou's Bedtime Stories",
+          "artist": "Jay.",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2754",
+          "title": "Bedtime Story",
+          "artist": "Wu Jian Hui",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4452",
+          "title": "Sweet Dreams & Starlight",
+          "artist": "David Nevue",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3373",
+          "title": "4 A Sleeping Forest",
+          "artist": "The Daydream",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4489",
+          "title": "Piano and Night",
+          "artist": "Brian Crain",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2738",
+          "title": "The magic alpha-subsperms-sleep",
+          "artist": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_2754",
+          "title": "Bedtime Story",
+          "artist": "Wu Jian Hui",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4452",
+          "title": "Sweet Dreams & Starlight",
+          "artist": "David Nevue",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3079",
+          "title": "Sleepless Songs",
+          "artist": "Shiraito!",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3373",
+          "title": "4 A Sleeping Forest",
+          "artist": "The Daydream",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4256",
+          "title": "Music of the Night",
+          "artist": "David Osborne",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "scene_04": {
+    "query": "music for a road trip",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_8930",
+          "title": "On the road.",
+          "artist": "I love it.",
+          "genre": "DVD",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8912",
+          "title": "On The Road",
+          "artist": "The velvet road.",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3349",
+          "title": "One Day Journey",
+          "artist": "Keysholic",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3496",
+          "title": "Our trip.",
+          "artist": "&OMG",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5019",
+          "title": "Rainy Airport",
+          "artist": "oNEwAY",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_8930",
+          "title": "On the road.",
+          "artist": "I love it.",
+          "genre": "DVD",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8912",
+          "title": "On The Road",
+          "artist": "The velvet road.",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8645",
+          "title": "♪ Go on the road ♪",
+          "artist": "Drop the train.",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2198",
+          "title": "Nam",
+          "artist": "Travel",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2327",
+          "title": "On My Way",
+          "artist": "Ben Kweller",
+          "genre": "Folk",
+          "rel": 1
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_8930",
+          "title": "On the road.",
+          "artist": "I love it.",
+          "genre": "DVD",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8912",
+          "title": "On The Road",
+          "artist": "The velvet road.",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3496",
+          "title": "Our trip.",
+          "artist": "&OMG",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2198",
+          "title": "Nam",
+          "artist": "Travel",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2327",
+          "title": "On My Way",
+          "artist": "Ben Kweller",
+          "genre": "Folk",
+          "rel": 1
+        }
+      ]
+    }
+  },
+  "scene_05": {
+    "query": "background music for a cozy cafe",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_7935",
+          "title": "Union Cafe",
+          "artist": "Penguin Cafe Orchestra",
+          "genre": "Classical",
+          "rel": 1
+        },
+        {
+          "song_id": "sid_5854",
+          "title": "Cafe Society (Original Motion Picture Soundtrack)",
+          "artist": "Various Artists",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3409",
+          "title": "Parisian Cafe",
+          "artist": "Beegie Adair, David Davidson",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8050",
+          "title": "TVアニメ「ゆるキャン△」オリジナル・サウンドトラック",
+          "artist": "Autumn Tsai",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2951",
+          "title": "ドラマ「ゴーイング マイ ホーム」サウンドトラック Going My Home(Soundtrack)",
+          "artist": "GONTITI, ゴンチチ",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_3817",
+          "title": "Coffee",
+          "artist": "beabadoobee",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6548",
+          "title": "Put Your Records On",
+          "artist": "Corinne Bailey Rae",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_7935",
+          "title": "Union Cafe",
+          "artist": "Penguin Cafe Orchestra",
+          "genre": "Classical",
+          "rel": 1
+        },
+        {
+          "song_id": "sid_3409",
+          "title": "Parisian Cafe",
+          "artist": "Beegie Adair, David Davidson",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2951",
+          "title": "ドラマ「ゴーイング マイ ホーム」サウンドトラック Going My Home(Soundtrack)",
+          "artist": "GONTITI, ゴンチチ",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5292",
+          "title": "TOKYO CAFÉ FREAK -Jazz Flavor-",
+          "artist": "V.A.",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5395",
+          "title": "The jazz cafe. The most classic jazz collection in history.",
+          "artist": "Various Artists",
+          "genre": "Jazz",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_7935",
+          "title": "Union Cafe",
+          "artist": "Penguin Cafe Orchestra",
+          "genre": "Classical",
+          "rel": 1
+        },
+        {
+          "song_id": "sid_3409",
+          "title": "Parisian Cafe",
+          "artist": "Beegie Adair, David Davidson",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2951",
+          "title": "ドラマ「ゴーイング マイ ホーム」サウンドトラック Going My Home(Soundtrack)",
+          "artist": "GONTITI, ゴンチチ",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5292",
+          "title": "TOKYO CAFÉ FREAK -Jazz Flavor-",
+          "artist": "V.A.",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5395",
+          "title": "The jazz cafe. The most classic jazz collection in history.",
+          "artist": "Various Artists",
+          "genre": "Jazz",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "scene_06": {
+    "query": "epic soundtrack music for a movie",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2685",
+          "title": "Exodus - Original Soundtrack",
+          "artist": "Ernest Gold",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2740",
+          "title": "Brotherhood",
+          "artist": "John Dreamer",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3252",
+          "title": "The Platinum Series III",
+          "artist": "AudioMachine",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1890",
+          "title": "Man Of Steel (Original Motion Picture Soundtrack) ：",
+          "artist": "· Hans Zimmer",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7872",
+          "title": "Mohicans [Special Edition][3CD Box Set]",
+          "artist": "Original Soundtrack",
+          "genre": "World Music",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_406",
+          "title": "T.I.M.E.",
+          "artist": "G.E.M.",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_6711",
+          "title": "Star Wars: The Force Awakens",
+          "artist": "John Williams",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3338",
+          "title": "Titanic: Music from the Motion Picture",
+          "artist": "James Horner",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5998",
+          "title": "Terminator Genisys (Music from the Motion Picture) ：",
+          "artist": "· Lorne Balfe",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1486",
+          "title": "Sanbao Video Music: Directly Impact 1",
+          "artist": "Sanbao.",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3207",
+          "title": "valiant hearts",
+          "artist": "Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1890",
+          "title": "Man Of Steel (Original Motion Picture Soundtrack) ：",
+          "artist": "· Hans Zimmer",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6574",
+          "title": "The Lord of the Rings: The Return of the King",
+          "artist": "Howard Shore",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6711",
+          "title": "Star Wars: The Force Awakens",
+          "artist": "John Williams",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2740",
+          "title": "Brotherhood",
+          "artist": "John Dreamer",
+          "genre": "Soundtrack",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3338",
+          "title": "Titanic: Music from the Motion Picture",
+          "artist": "James Horner",
+          "genre": "Soundtrack",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "scene_07": {
+    "query": "music for meditation and relaxation",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3008",
+          "title": "II HEALING COLLECTION II / Healing Collection 2",
+          "artist": "Various Artists",
+          "genre": "World Music",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4506",
+          "title": "Piano Moods From Mars",
+          "artist": "Mars Lasar",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2997",
+          "title": "Peace Moon.",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5731",
+          "title": "Presence",
+          "artist": "",
+          "genre": "Soundtrack",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_3008",
+          "title": "II HEALING COLLECTION II / Healing Collection 2",
+          "artist": "Various Artists",
+          "genre": "World Music",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4876",
+          "title": "Enchanted Piano",
+          "artist": "Kevin Kern",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2800",
+          "title": "Serenity",
+          "artist": "Capozio",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2927",
+          "title": "Reiki Offering",
+          "artist": "Various Artists",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_3008",
+          "title": "II HEALING COLLECTION II / Healing Collection 2",
+          "artist": "Various Artists",
+          "genre": "World Music",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4506",
+          "title": "Piano Moods From Mars",
+          "artist": "Mars Lasar",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4876",
+          "title": "Enchanted Piano",
+          "artist": "Kevin Kern",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2954",
+          "title": "Sound.Earth.Nature.Spirit.vol.nature 20：",
+          "artist": "S.E.N.S.",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3028",
+          "title": "breath",
+          "artist": "yutaka hirasaka",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "scene_08": {
+    "query": "songs for a party and dancing",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_1552",
+          "title": "Party In the U.S.A.",
+          "artist": "Miley Cyrus",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1573",
+          "title": "Party",
+          "artist": "Twins",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9166",
+          "title": "Intimacy",
+          "artist": "Bloc Party",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8702",
+          "title": "No Party People",
+          "artist": "",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1207",
+          "title": "The Party !",
+          "artist": "Vengaboys",
+          "genre": "Electronic",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_1552",
+          "title": "Party In the U.S.A.",
+          "artist": "Miley Cyrus",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1207",
+          "title": "The Party !",
+          "artist": "Vengaboys",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8441",
+          "title": "You want to dance?",
+          "artist": "New pants.",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4354",
+          "title": "Everything Now (Day Version)",
+          "artist": "Arcade Fire",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9760",
+          "title": "Let's Dance to Joy Division",
+          "artist": "The Wombats",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1552",
+          "title": "Party In the U.S.A.",
+          "artist": "Miley Cyrus",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1207",
+          "title": "The Party !",
+          "artist": "Vengaboys",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8441",
+          "title": "You want to dance?",
+          "artist": "New pants.",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9760",
+          "title": "Let's Dance to Joy Division",
+          "artist": "The Wombats",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4354",
+          "title": "Everything Now (Day Version)",
+          "artist": "Arcade Fire",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "scene_09": {
+    "query": "music to focus while working",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3290",
+          "title": "The sound of the sound is working.",
+          "artist": "Linhai!",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4915",
+          "title": "Study Music Project：Music For The Mind",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4506",
+          "title": "Piano Moods From Mars",
+          "artist": "Mars Lasar",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2911",
+          "title": "Catarse",
+          "artist": "Andrei Machado",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4138",
+          "title": "Nuvole bianche",
+          "artist": "Marco Velocci",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4915",
+          "title": "Study Music Project：Music For The Mind",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2818",
+          "title": "small sketch",
+          "artist": "mitsuyoshi matsuda",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2889",
+          "title": "Famous Places",
+          "artist": "Goldmund",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4396",
+          "title": "Becalmed",
+          "artist": "Sophie Hutchings",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_4915",
+          "title": "Study Music Project：Music For The Mind",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2889",
+          "title": "Famous Places",
+          "artist": "Goldmund",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2818",
+          "title": "small sketch",
+          "artist": "mitsuyoshi matsuda",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3028",
+          "title": "breath",
+          "artist": "yutaka hirasaka",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "scene_10": {
+    "query": "songs for a rainy day",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_6632",
+          "title": "Singin' in the Rain",
+          "artist": "Various Artists",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2653",
+          "title": "Sentiment in rain",
+          "artist": "Swans and flowers.",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1434",
+          "title": "Rain Man.",
+          "artist": "Zhou Huaqian",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8964",
+          "title": "RAIN RAIN RAIN",
+          "artist": "No Border Music",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8557",
+          "title": "Rain Book, chapter three, starting with the autumn wind, pick the cherry and Quakers before they fall.",
+          "artist": "Rain, Yvbo",
+          "genre": "Digital",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5927",
+          "title": "Purple Rain",
+          "artist": "Prince",
+          "genre": "Funk/Soul/R&B",
+          "rel": 1
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_6632",
+          "title": "Singin' in the Rain",
+          "artist": "Various Artists",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4129",
+          "title": "Rain Stories",
+          "artist": "Marika Takeuchi",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7626",
+          "title": "Ref:rain",
+          "artist": "Aimer",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5364",
+          "title": "Kisses in the Rain",
+          "artist": "John Pizzarelli",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7700",
+          "title": "ノ OP，ED",
+          "artist": "Qin Ki-bok.",
+          "genre": "Soundtrack",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_2653",
+          "title": "Sentiment in rain",
+          "artist": "Swans and flowers.",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4129",
+          "title": "Rain Stories",
+          "artist": "Marika Takeuchi",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7626",
+          "title": "Ref:rain",
+          "artist": "Aimer",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7867",
+          "title": "Singing in the Rain",
+          "artist": "Gene Kelly",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5364",
+          "title": "Kisses in the Rain",
+          "artist": "John Pizzarelli",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "mood_01": {
+    "query": "sad songs to heal a broken heart",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_4456",
+          "title": "Healer of Hearts",
+          "artist": "Danny Wright",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5182",
+          "title": "Emotional Piano - Hope",
+          "artist": "Peter Jeremias",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2046",
+          "title": "MERCY&SORROW",
+          "artist": "Big Sad",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_743",
+          "title": "Healing Is Difficult",
+          "artist": "Sia",
+          "genre": "Funk/Soul/R&B",
+          "rel": 1
+        },
+        {
+          "song_id": "sid_8523",
+          "title": "Breaking wings.",
+          "artist": "Broken",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_435",
+          "title": "Someone Like You",
+          "artist": "Adele",
+          "genre": "Funk/Soul/R&B",
+          "rel": 1
+        },
+        {
+          "song_id": "sid_9447",
+          "title": "Fix You",
+          "artist": "Coldplay",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_4456",
+          "title": "Healer of Hearts",
+          "artist": "Danny Wright",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6778",
+          "title": "In The Lonely Hour - Drowning Shadows Edition",
+          "artist": "Sam Smith",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_9447",
+          "title": "Fix You",
+          "artist": "Coldplay",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2359",
+          "title": "Let's Not Grieve Anymore",
+          "artist": "Man Fung.",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3906",
+          "title": "Kintsugi",
+          "artist": "Death Cab for Cutie",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_4456",
+          "title": "Healer of Hearts",
+          "artist": "Danny Wright",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6778",
+          "title": "In The Lonely Hour - Drowning Shadows Edition",
+          "artist": "Sam Smith",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_9447",
+          "title": "Fix You",
+          "artist": "Coldplay",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2359",
+          "title": "Let's Not Grieve Anymore",
+          "artist": "Man Fung.",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3906",
+          "title": "Kintsugi",
+          "artist": "Death Cab for Cutie",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "mood_02": {
+    "query": "happy uplifting songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_5182",
+          "title": "Emotional Piano - Hope",
+          "artist": "Peter Jeremias",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3155",
+          "title": "The smell of happiness.",
+          "artist": "Various Artists",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6038",
+          "title": "happy happy sad:)) –",
+          "artist": "Chen Jian Jian Jian",
+          "genre": "Hip Hop/Rap",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8379",
+          "title": "A flower of happiness.",
+          "artist": "Lego and Heaven.",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5295",
+          "title": "AFTERNOON TEA MUSIC FOR JOY",
+          "artist": "Various Artists",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2099",
+          "title": "Three happiness.",
+          "artist": "- Humpling.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9760",
+          "title": "Let's Dance to Joy Division",
+          "artist": "The Wombats",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1006",
+          "title": "Smile.",
+          "artist": "Yang Chiu-Yi",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8379",
+          "title": "A flower of happiness.",
+          "artist": "Lego and Heaven.",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6991",
+          "title": "Happy 1st Solo",
+          "artist": "Jin (BTS)",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8344",
+          "title": "Our soul is happy, and our servant is so happy.",
+          "artist": "Transparency magazine, Touming Magazine",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2473",
+          "title": "A little happiness.",
+          "artist": "Chaishishi cat.",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "mood_03": {
+    "query": "calm relaxing music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2750",
+          "title": "Relaxation - Honesty",
+          "artist": "Bandari",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2780",
+          "title": "Oasis",
+          "artist": "Guitarra Azul",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2738",
+          "title": "The magic alpha-subsperms-sleep",
+          "artist": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4506",
+          "title": "Piano Moods From Mars",
+          "artist": "Mars Lasar",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2799",
+          "title": "River Flows in You",
+          "artist": "Jasper Forks",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2750",
+          "title": "Relaxation - Honesty",
+          "artist": "Bandari",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4337",
+          "title": "Softly",
+          "artist": "Giovanni Marradi",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4086",
+          "title": "Deep Joy",
+          "artist": "Isaac Shepard",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3204",
+          "title": "--Spa Life-SPA",
+          "artist": "Windy Records",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3204",
+          "title": "--Spa Life-SPA",
+          "artist": "Windy Records",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2997",
+          "title": "Peace Moon.",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4876",
+          "title": "Enchanted Piano",
+          "artist": "Kevin Kern",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2911",
+          "title": "Catarse",
+          "artist": "Andrei Machado",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "mood_04": {
+    "query": "energetic motivational music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_8977",
+          "title": "perpetual motion machine",
+          "artist": "\"Ever Motive.\"",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8348",
+          "title": "Guide to the Energetic Ostrich Recreation",
+          "artist": "The Almighty Youth Hotel",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3100",
+          "title": "Winter Story (Study Music Project)",
+          "artist": "Dennis Kuo",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4494",
+          "title": "Gymnopedie",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3831",
+          "title": "Leisure",
+          "artist": "Leisure",
+          "genre": "Electronic",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_1478",
+          "title": "Eye of the Tiger",
+          "artist": "Survivor",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_548",
+          "title": "Stronger",
+          "artist": "Kelly Clarkson",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_8977",
+          "title": "perpetual motion machine",
+          "artist": "\"Ever Motive.\"",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2537",
+          "title": "Aim and Ignite",
+          "artist": "fun.",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4844",
+          "title": "A footprint of feelings",
+          "artist": "Moonlit Sailor",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9613",
+          "title": "Speed of Sound",
+          "artist": "Coldplay",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2467",
+          "title": "Summer/ Fever (Ethic)",
+          "artist": "Soda green",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_8977",
+          "title": "perpetual motion machine",
+          "artist": "\"Ever Motive.\"",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4844",
+          "title": "A footprint of feelings",
+          "artist": "Moonlit Sailor",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_571",
+          "title": "Summer Concertation",
+          "artist": "Lin Yi-Ying",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2287",
+          "title": "Apocalypse.",
+          "artist": "\"Ever Motive.\"",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8348",
+          "title": "Guide to the Energetic Ostrich Recreation",
+          "artist": "The Almighty Youth Hotel",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "mood_05": {
+    "query": "romantic love songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_5772",
+          "title": "Beautiful Love",
+          "artist": "Keiko Lee",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1678",
+          "title": "Love Songs",
+          "artist": "Elton John",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2895",
+          "title": "Love, love, love.",
+          "artist": "S.E.N.S.",
+          "genre": "World Music",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3423",
+          "title": "Romantico",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1565",
+          "title": "One Love",
+          "artist": "Pang, ARASHI",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6245",
+          "title": "Thinking Out Loud",
+          "artist": "Ed Sheeran",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_559",
+          "title": "Dangerously in Love",
+          "artist": "Beyoncé",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6646",
+          "title": "Songs of Love",
+          "artist": "Anita Ward",
+          "genre": "Funk/Soul/R&B",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_195",
+          "title": "Lover",
+          "artist": "Taylor Swift",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6220",
+          "title": "Taste",
+          "artist": "Rhye",
+          "genre": "Funk/Soul/R&B",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6008",
+          "title": "Beautiful",
+          "artist": "Tau-Yu!",
+          "genre": "Funk/Soul/R&B",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_4326",
+          "title": "Mariage d'Amour-",
+          "artist": "· Richard Clayderman",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_195",
+          "title": "Lover",
+          "artist": "Taylor Swift",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1565",
+          "title": "One Love",
+          "artist": "Pang, ARASHI",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5772",
+          "title": "Beautiful Love",
+          "artist": "Keiko Lee",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5478",
+          "title": "Romantic love songs. Romantic love songs.",
+          "artist": "Junko!",
+          "genre": "Jazz",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "mood_06": {
+    "query": "nostalgic old songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_8601",
+          "title": "I used to be an old man, and I was a 20th-year-old sound fragment.",
+          "artist": "Sound Fragment",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9431",
+          "title": "Previous Age",
+          "artist": "The Killers",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8927",
+          "title": "90 Modern Musical",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8156",
+          "title": "The Old Family Is Still Alive",
+          "artist": "National Suicide",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8151",
+          "title": "Letters From the Past Vol.1",
+          "artist": "Ankhagram",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1640",
+          "title": "What A Wonderful World",
+          "artist": "Louis Armstrong",
+          "genre": "Jazz",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9771",
+          "title": "Stand by Me",
+          "artist": "Oasis",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1959",
+          "title": "Unchained Melody",
+          "artist": "The Righteous Brothers",
+          "genre": "Folk",
+          "rel": 2
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2642",
+          "title": "Try To Remember Greatest Hits",
+          "artist": "The Brothers Four",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9431",
+          "title": "Previous Age",
+          "artist": "The Killers",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8927",
+          "title": "90 Modern Musical",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7886",
+          "title": "Old road mood.",
+          "artist": "Liu Yuan",
+          "genre": "Classical",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3649",
+          "title": "Old Goodbyes",
+          "artist": "Pajaro Sunrise",
+          "genre": "Folk",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_9431",
+          "title": "Previous Age",
+          "artist": "The Killers",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8927",
+          "title": "90 Modern Musical",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2642",
+          "title": "Try To Remember Greatest Hits",
+          "artist": "The Brothers Four",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9668",
+          "title": "Countdown 1992-1983",
+          "artist": "Pulp",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8520",
+          "title": "The 10th Anniversary of Red Star Music",
+          "artist": "Various Artists",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "mood_07": {
+    "query": "angry aggressive music to vent",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_8155",
+          "title": "Socialized Hate",
+          "artist": "Atrophy",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9332",
+          "title": "media murdered the young",
+          "artist": "The Los",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_460",
+          "title": "- I'm so angry.",
+          "artist": "Wang Fei",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_453",
+          "title": "Rage in Peace",
+          "artist": "Serrini, Serrini",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6439",
+          "title": "Quarrel",
+          "artist": "Moses Sumney",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3957",
+          "title": "Duality",
+          "artist": "Luna Li",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_8155",
+          "title": "Socialized Hate",
+          "artist": "Atrophy",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9332",
+          "title": "media murdered the young",
+          "artist": "The Los",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8827",
+          "title": "TANGK",
+          "artist": "IDLES",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8278",
+          "title": "In the Embrace of Evil",
+          "artist": "Grotesque",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9517",
+          "title": "Meltdown",
+          "artist": "Ash",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_8155",
+          "title": "Socialized Hate",
+          "artist": "Atrophy",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8278",
+          "title": "In the Embrace of Evil",
+          "artist": "Grotesque",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8176",
+          "title": "Predator",
+          "artist": "Bitches Sin",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4856",
+          "title": "Songs About Fucking",
+          "artist": "Big Black",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_322",
+          "title": "♪ Joy and anger ♪",
+          "artist": "Beyond",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "mood_08": {
+    "query": "dreamy atmospheric music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_8117",
+          "title": "Octavarium",
+          "artist": "Dream Theater",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2738",
+          "title": "The magic alpha-subsperms-sleep",
+          "artist": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8303",
+          "title": "Dreamspace",
+          "artist": "Stratovarius",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8118",
+          "title": "Systematic Chaos",
+          "artist": "Dream Theater",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7818",
+          "title": "Moonrise Kingdom",
+          "artist": "Various Artists",
+          "genre": "Soundtrack",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2717",
+          "title": "vol.3- vol.3 / Dreaming",
+          "artist": "Lee Sung-woo.",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3005",
+          "title": "Five Songs",
+          "artist": "Endless Melancholy",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8693",
+          "title": "Moon Safari",
+          "artist": "Air",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2726",
+          "title": "Dreaming.",
+          "artist": "The dream of change.",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3398",
+          "title": "Sound.Earth.Nature.Spirit. Vol.EARTH 20:",
+          "artist": "S.E.N.S.",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_5088",
+          "title": "Atlas: Space 1",
+          "artist": "Sleeping At Last",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2947",
+          "title": "Dream Once Again",
+          "artist": "Florian Bur",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6775",
+          "title": "moon",
+          "artist": "Brahny",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7818",
+          "title": "Moonrise Kingdom",
+          "artist": "Various Artists",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_866",
+          "title": "Twin Peaks (Music from the Limited Event Series) 《 》",
+          "artist": "Various Artists",
+          "genre": "Soundtrack",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "mood_09": {
+    "query": "cheerful feel-good songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3155",
+          "title": "The smell of happiness.",
+          "artist": "Various Artists",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_7279",
+          "title": "Positive State of Mind",
+          "artist": "The Dramatics",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6519",
+          "title": "Songs from This",
+          "artist": "Joy Williams",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3005",
+          "title": "Five Songs",
+          "artist": "Endless Melancholy",
+          "genre": "Electronic",
+          "rel": 1
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_7279",
+          "title": "Positive State of Mind",
+          "artist": "The Dramatics",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5295",
+          "title": "AFTERNOON TEA MUSIC FOR JOY",
+          "artist": "Various Artists",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2099",
+          "title": "Three happiness.",
+          "artist": "- Humpling.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1006",
+          "title": "Smile.",
+          "artist": "Yang Chiu-Yi",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_3155",
+          "title": "The smell of happiness.",
+          "artist": "Various Artists",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2099",
+          "title": "Three happiness.",
+          "artist": "- Humpling.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1006",
+          "title": "Smile.",
+          "artist": "Yang Chiu-Yi",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2335",
+          "title": "Wonderful Day",
+          "artist": "Travel",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "mood_10": {
+    "query": "melancholy piano music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_4821",
+          "title": "Piano teacher",
+          "artist": "Original Soundtrack",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1491",
+          "title": "The Pianist The Pianist: Music from the Motion Picture",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4265",
+          "title": "Gold Classic: The Pale of Pleasant Songs",
+          "artist": "Beethoven., Bach., Miles., Ovenbach., Beyond.",
+          "genre": "Classical",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4506",
+          "title": "Piano Moods From Mars",
+          "artist": "Mars Lasar",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6575",
+          "title": "Black Swan",
+          "artist": "Clint Mansell",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_2799",
+          "title": "River Flows in You",
+          "artist": "Jasper Forks",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4138",
+          "title": "Nuvole bianche",
+          "artist": "Marco Velocci",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_4265",
+          "title": "Gold Classic: The Pale of Pleasant Songs",
+          "artist": "Beethoven., Bach., Miles., Ovenbach., Beyond.",
+          "genre": "Classical",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1924",
+          "title": "Piano music (lug light, sad, passionate)",
+          "artist": "Beethoven.",
+          "genre": "Classical",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_4871",
+          "title": "Beethoven Piano Musical [Silent] Moonlight, Passional Farewell]",
+          "artist": "Arthur Rubinstein",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4717",
+          "title": "Very Best Of Satie",
+          "artist": "Satie",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5180",
+          "title": "Schubert: Fantasy in F minor for piano duet; Grand Duo Sonata in C etc.",
+          "artist": "Richter, Britten",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1491",
+          "title": "The Pianist The Pianist: Music from the Motion Picture",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6575",
+          "title": "Black Swan",
+          "artist": "Clint Mansell",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_7663",
+          "title": "Carol",
+          "artist": "Carter Burwell",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2853",
+          "title": "Another Happy Day",
+          "artist": "Ólafur Arnalds",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4197",
+          "title": "Pianoscope",
+          "artist": "Alexandra Stréliski",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "genre_01": {
+    "query": "fast-paced pop songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_9180",
+          "title": "Everything's the Rush",
+          "artist": "Delays",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_201",
+          "title": "I like you slowly.",
+          "artist": "I'm sorry.",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8935",
+          "title": "Xu Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xiao Xing",
+          "artist": "Xu Xu Jian",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4016",
+          "title": "Yard",
+          "artist": "Slow Pulp",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3486",
+          "title": "Slow Summits",
+          "artist": "The Pastels",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_9180",
+          "title": "Everything's the Rush",
+          "artist": "Delays",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5214",
+          "title": "World Tour",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3015",
+          "title": "Vol.2",
+          "artist": "Beatsound",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3039",
+          "title": "Trailerhead",
+          "artist": "Immediate",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_434",
+          "title": "My Desired Happiness",
+          "artist": "Sun Yanzi.",
+          "genre": "Pop",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_9180",
+          "title": "Everything's the Rush",
+          "artist": "Delays",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5214",
+          "title": "World Tour",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8772",
+          "title": "Soundsystem",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3015",
+          "title": "Vol.2",
+          "artist": "Beatsound",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4608",
+          "title": "Swell",
+          "artist": "Tiny Moving Parts",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "genre_02": {
+    "query": "classical piano pieces",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_4079",
+          "title": "Ultimate Classical Piano",
+          "artist": "Various.Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4305",
+          "title": "Ultimate Classical Piano: The Essential Masterpieces ：",
+          "artist": "Various Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4394",
+          "title": "Johannes Brahms- Klavierquartett-Piano Quartet op.25-Balladen op.10",
+          "artist": "Emil Gilels - Amadeus Quartet",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_7258",
+          "title": "Schumann: Piano Concerto / Brahms: Variations & Fugue on a Theme by Handel",
+          "artist": "Alfred Brendel, Wiener Philharmoniker, Sir Simon Rattle",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4583",
+          "title": "Best 100 Piano Classics",
+          "artist": "Piano Classics",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_4079",
+          "title": "Ultimate Classical Piano",
+          "artist": "Various.Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4226",
+          "title": "Easy-Listening Piano Classics: J.S.Bach",
+          "artist": "Various Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4583",
+          "title": "Best 100 Piano Classics",
+          "artist": "Piano Classics",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4150",
+          "title": "Piano Book",
+          "artist": "Lang Lang",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4813",
+          "title": "The piano's 101",
+          "artist": "Various Artists",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_4079",
+          "title": "Ultimate Classical Piano",
+          "artist": "Various.Artists",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4583",
+          "title": "Best 100 Piano Classics",
+          "artist": "Piano Classics",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4124",
+          "title": "Bach Piano Piano Full Series",
+          "artist": "Sviatoslav Richter",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4328",
+          "title": "Maurice Ravel: Complete Piano Works",
+          "artist": "Jean-Efflam Bavouzet",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5187",
+          "title": "Dmitri Shostakovich: 24 Preludes And Fugues For Piano, Op. 87 《24》 / ·",
+          "artist": "Tatiana Nikolaeva",
+          "genre": "Classical",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "genre_03": {
+    "query": "jazz with saxophone",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_5746",
+          "title": "Mr. Jazz - A Song for You",
+          "artist": "Jam Hsiao",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5573",
+          "title": "Verve Jazz Masters 21",
+          "artist": "George Benson",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5797",
+          "title": "Live at Birdland",
+          "artist": "John Coltrane",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5826",
+          "title": "Jazz in Paris: Louis Armstrong & Friends",
+          "artist": "・ Louis Armstrong",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5629",
+          "title": "Verve Jazz Masters 29",
+          "artist": "Jimmy Smith",
+          "genre": "Jazz",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5327",
+          "title": "Giant Steps",
+          "artist": "John Coltrane",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_5746",
+          "title": "Mr. Jazz - A Song for You",
+          "artist": "Jam Hsiao",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5452",
+          "title": "Verve Jazz Masters 33",
+          "artist": "Benny Goodman",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5425",
+          "title": "Best Audiophile Voices IV",
+          "artist": "Various Artists",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5826",
+          "title": "Jazz in Paris: Louis Armstrong & Friends",
+          "artist": "・ Louis Armstrong",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5441",
+          "title": "Verve Jazz Masters 39",
+          "artist": "Cal Tjader",
+          "genre": "Jazz",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_5746",
+          "title": "Mr. Jazz - A Song for You",
+          "artist": "Jam Hsiao",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5797",
+          "title": "Live at Birdland",
+          "artist": "John Coltrane",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5452",
+          "title": "Verve Jazz Masters 33",
+          "artist": "Benny Goodman",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5368",
+          "title": "Blue Train",
+          "artist": "John Coltrane",
+          "genre": "Jazz",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5816",
+          "title": "Stan Meets Chet",
+          "artist": "Stan Getz, Chet Baker",
+          "genre": "Jazz",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "genre_04": {
+    "query": "electronic synth music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_599",
+          "title": "Discovery",
+          "artist": "Daft Punk",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5141",
+          "title": "The Well-Tempered Synthesizer",
+          "artist": "Wendy Carlos",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8047",
+          "title": "Oxenfree Original Soundtrack",
+          "artist": "Scntfc",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3120",
+          "title": "Tiny Musical",
+          "artist": "Akira Kosemura",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4543",
+          "title": "Looped",
+          "artist": "Kiasmos",
+          "genre": "Electronic",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6684",
+          "title": "Blade Runner",
+          "artist": "Vangelis",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_599",
+          "title": "Discovery",
+          "artist": "Daft Punk",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_227",
+          "title": "Random Access Memories",
+          "artist": "Daft Punk",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3267",
+          "title": "Jackpot",
+          "artist": "TheFatRat",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1351",
+          "title": "Unity",
+          "artist": "Thefatrat",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1215",
+          "title": "Get Ready!",
+          "artist": "",
+          "genre": "Electronic",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_599",
+          "title": "Discovery",
+          "artist": "Daft Punk",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_227",
+          "title": "Random Access Memories",
+          "artist": "Daft Punk",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3267",
+          "title": "Jackpot",
+          "artist": "TheFatRat",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4543",
+          "title": "Looped",
+          "artist": "Kiasmos",
+          "genre": "Electronic",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8047",
+          "title": "Oxenfree Original Soundtrack",
+          "artist": "Scntfc",
+          "genre": "Electronic",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "genre_05": {
+    "query": "folk acoustic guitar",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_1989",
+          "title": "This way.",
+          "artist": "- Humpling.",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2748",
+          "title": "Wermland",
+          "artist": "Detektivbyrån",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1311",
+          "title": "Silver Hotel.",
+          "artist": "Zhang Yiu, Kwok Long",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2042",
+          "title": "Not Sokute",
+          "artist": "soko",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8823",
+          "title": "Curse.",
+          "artist": "Wild boy.",
+          "genre": "Folk",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_1961",
+          "title": "Let's Folk",
+          "artist": "Various Artists",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2402",
+          "title": "Woodgate, NY",
+          "artist": "Novo Amor",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_4917",
+          "title": "B-Sides",
+          "artist": "Tom Rosenthal",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1989",
+          "title": "This way.",
+          "artist": "- Humpling.",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2748",
+          "title": "Wermland",
+          "artist": "Detektivbyrån",
+          "genre": "Folk",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1989",
+          "title": "This way.",
+          "artist": "- Humpling.",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2402",
+          "title": "Woodgate, NY",
+          "artist": "Novo Amor",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3908",
+          "title": "Stay Gold",
+          "artist": "First Aid Kit",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_1062",
+          "title": "The First 25 Years 1995-2020",
+          "artist": "· Sophie Zelmani",
+          "genre": "Folk",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_2196",
+          "title": "Holland",
+          "artist": "Novo Amor",
+          "genre": "Folk",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "genre_06": {
+    "query": "soul and R&B songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_6856",
+          "title": "Soul,PRESENT",
+          "artist": "Q",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6712",
+          "title": "Ballads: Mary J Blige",
+          "artist": "Mary J. Blige",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3886",
+          "title": "Spirit",
+          "artist": "Rhye",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6329",
+          "title": "Soul Tattoo",
+          "artist": "The Average White Band",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6703",
+          "title": "Music City Soul",
+          "artist": "Beverley Knight",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1222",
+          "title": "Let's Stay Together",
+          "artist": "Al Green",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_6712",
+          "title": "Ballads: Mary J Blige",
+          "artist": "Mary J. Blige",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7424",
+          "title": "Ology",
+          "artist": "Gallant",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6813",
+          "title": "Subject",
+          "artist": "Dwele",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1220",
+          "title": "Green Is Blues",
+          "artist": "Al Green",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6243",
+          "title": "Free Spirit",
+          "artist": "Khalid",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_6712",
+          "title": "Ballads: Mary J Blige",
+          "artist": "Mary J. Blige",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7424",
+          "title": "Ology",
+          "artist": "Gallant",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6289",
+          "title": "Compilation 1.1",
+          "artist": "Celeste",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1220",
+          "title": "Green Is Blues",
+          "artist": "Al Green",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1108",
+          "title": "Soul 2",
+          "artist": "Seal",
+          "genre": "Funk/Soul/R&B",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "genre_07": {
+    "query": "hip hop rap music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_6394",
+          "title": "Music & Me",
+          "artist": "Nate Dogg",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_751",
+          "title": "Kala",
+          "artist": "M.I.A.",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_7809",
+          "title": "Hustle & Flow",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5482",
+          "title": "Jazzmatazz, Vol. 1",
+          "artist": "Guru",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6485",
+          "title": "Adios",
+          "artist": "LilAkin, Cee",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_7809",
+          "title": "Hustle & Flow",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6394",
+          "title": "Music & Me",
+          "artist": "Nate Dogg",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_751",
+          "title": "Kala",
+          "artist": "M.I.A.",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8874",
+          "title": "PETRICHOR",
+          "artist": "",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_253",
+          "title": "Wu Ha",
+          "artist": "Pam Paw.",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_247",
+          "title": "2001",
+          "artist": "Dr. Dre",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_249",
+          "title": "Doggystyle",
+          "artist": "Snoop Doggy Dogg",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5482",
+          "title": "Jazzmatazz, Vol. 1",
+          "artist": "Guru",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6735",
+          "title": "World Wide Whack",
+          "artist": "Tierra Whack",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_6083",
+          "title": "XXL 2ND",
+          "artist": "YOUNG POSSE, 영파씨",
+          "genre": "Hip Hop/Rap",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "genre_08": {
+    "query": "blues guitar music",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_1721",
+          "title": "Blues",
+          "artist": "Jimi Hendrix",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5545",
+          "title": "The old Black Lord of Blue Note.",
+          "artist": "Various Artists",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6625",
+          "title": "The Blues Brothers: Original Soundtrack Recording",
+          "artist": "The Blues Brothers",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1808",
+          "title": "The rhythm and the blues",
+          "artist": "Jimmy barnes",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5342",
+          "title": "Cadillac Records",
+          "artist": "Various Artists",
+          "genre": "Blues",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_1721",
+          "title": "Blues",
+          "artist": "Jimi Hendrix",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5545",
+          "title": "The old Black Lord of Blue Note.",
+          "artist": "Various Artists",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5342",
+          "title": "Cadillac Records",
+          "artist": "Various Artists",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7056",
+          "title": "That's What I Heard",
+          "artist": "Robert Cray",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7102",
+          "title": "The Blues",
+          "artist": "B.B. King",
+          "genre": "Blues",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1721",
+          "title": "Blues",
+          "artist": "Jimi Hendrix",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5545",
+          "title": "The old Black Lord of Blue Note.",
+          "artist": "Various Artists",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5342",
+          "title": "Cadillac Records",
+          "artist": "Various Artists",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5768",
+          "title": "Suitcase",
+          "artist": "Keb Mo",
+          "genre": "Blues",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7102",
+          "title": "The Blues",
+          "artist": "B.B. King",
+          "genre": "Blues",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "genre_09": {
+    "query": "world music from different cultures",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2876",
+          "title": "Sylves New Century Asia",
+          "artist": "Various Artists",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3109",
+          "title": "Global Spirit",
+          "artist": "Karunesh",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6185",
+          "title": "Babadu!",
+          "artist": "Babadu",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6946",
+          "title": "The World Is a Ghetto",
+          "artist": "War",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3093",
+          "title": "Ancient Kike Legend",
+          "artist": "Central National Orchestra",
+          "genre": "World Music",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2876",
+          "title": "Sylves New Century Asia",
+          "artist": "Various Artists",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6185",
+          "title": "Babadu!",
+          "artist": "Babadu",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3093",
+          "title": "Ancient Kike Legend",
+          "artist": "Central National Orchestra",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1697",
+          "title": "Israel",
+          "artist": "Putumayo Presents",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7772",
+          "title": "Kula Kulluk Yakisir Mi",
+          "artist": "Kayhan Kalhor",
+          "genre": "World Music",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_2876",
+          "title": "Sylves New Century Asia",
+          "artist": "Various Artists",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6185",
+          "title": "Babadu!",
+          "artist": "Babadu",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6061",
+          "title": "MUJI BGM 3 BGM 3 / Sicily",
+          "artist": "MUJI",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2651",
+          "title": "The Women's 12th Musical Miracles: The Japanese Dojo Courtesy, the Women's 12th School, the Japanese Dodo Court.",
+          "artist": "The girls' 12th.",
+          "genre": "World Music",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7675",
+          "title": "Black Ivory Soul",
+          "artist": "Angelique Kidjo",
+          "genre": "World Music",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "genre_10": {
+    "query": "live concert recordings",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2667",
+          "title": "Live In Studio: Acoustic Trio",
+          "artist": "Katie Herzig",
+          "genre": "Folk",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9088",
+          "title": "H.A.A.R.P: Live from Wembley CD/DVD (Special Edition)",
+          "artist": "Muse",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_9374",
+          "title": "HAARP Live from Wembley Stadium / -",
+          "artist": "Muse",
+          "genre": "Electronic",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9456",
+          "title": "Live at Union Chapel Acoustic Performance Recorded in London",
+          "artist": "Brett Anderson",
+          "genre": "Folk",
+          "rel": 1
+        },
+        {
+          "song_id": "sid_9302",
+          "title": "Live Recordings 2004",
+          "artist": "Keane",
+          "genre": "Rock",
+          "rel": 3
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5152",
+          "title": "Hotel California",
+          "artist": "Eagles",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_9088",
+          "title": "H.A.A.R.P: Live from Wembley CD/DVD (Special Edition)",
+          "artist": "Muse",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_8234",
+          "title": "Alive!",
+          "artist": "Kiss",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5790",
+          "title": "Live At The Royal Albert Hall",
+          "artist": "Adele",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8460",
+          "title": "Live 1991 BEYOND 1991 LIVE",
+          "artist": "Beyond",
+          "genre": "Rock",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5775",
+          "title": "Live at Pep's",
+          "artist": "Yusef Lateef",
+          "genre": "Jazz",
+          "rel": 3
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_9088",
+          "title": "H.A.A.R.P: Live from Wembley CD/DVD (Special Edition)",
+          "artist": "Muse",
+          "genre": "Pop",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_5790",
+          "title": "Live At The Royal Albert Hall",
+          "artist": "Adele",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5109",
+          "title": "The New York Concert",
+          "artist": "Evgeny Kissin, Emerson String Quartet",
+          "genre": "Classical",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1057",
+          "title": "Live Sessions from Air Studios",
+          "artist": "Yutota-san!",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5775",
+          "title": "Live at Pep's",
+          "artist": "Yusef Lateef",
+          "genre": "Jazz",
+          "rel": 3
+        }
+      ]
+    }
+  },
+  "vague_01": {
+    "query": "some interesting old songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_8601",
+          "title": "I used to be an old man, and I was a 20th-year-old sound fragment.",
+          "artist": "Sound Fragment",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7886",
+          "title": "Old road mood.",
+          "artist": "Liu Yuan",
+          "genre": "Classical",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2684",
+          "title": "Old things in the city.",
+          "artist": "Linhai!",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3649",
+          "title": "Old Goodbyes",
+          "artist": "Pajaro Sunrise",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_990",
+          "title": "You're gonna get old.",
+          "artist": "Zhangxi!",
+          "genre": "Folk",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8603",
+          "title": "The End",
+          "artist": "Left and right",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9521",
+          "title": "Tomorrow Never Knows",
+          "artist": "The Beatles",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_3649",
+          "title": "Old Goodbyes",
+          "artist": "Pajaro Sunrise",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3693",
+          "title": "The Old Days Feeling",
+          "artist": "Mirah",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_730",
+          "title": "The song is new and the song is new and the song is very good.",
+          "artist": "Ancient Big Gigi",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1937",
+          "title": "The sound of the oars is still alive.",
+          "artist": "Mauning.",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8927",
+          "title": "90 Modern Musical",
+          "artist": "",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_3649",
+          "title": "Old Goodbyes",
+          "artist": "Pajaro Sunrise",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_990",
+          "title": "You're gonna get old.",
+          "artist": "Zhangxi!",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1937",
+          "title": "The sound of the oars is still alive.",
+          "artist": "Mauning.",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3693",
+          "title": "The Old Days Feeling",
+          "artist": "Mirah",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7807",
+          "title": "A story of the past.",
+          "artist": "Original Soundtrack",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "vague_02": {
+    "query": "something different to listen to",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_9458",
+          "title": "Are You Listening?",
+          "artist": "Dolores O'Riordan",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4918",
+          "title": "- Radio Mix",
+          "artist": "A",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4898",
+          "title": "Hear You",
+          "artist": "toe",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4170",
+          "title": "Stay",
+          "artist": "Chad Lawson",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2954",
+          "title": "Sound.Earth.Nature.Spirit.vol.nature 20：",
+          "artist": "S.E.N.S.",
+          "genre": "Easy Listening",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9127",
+          "title": "Paranoid Android",
+          "artist": "Radiohead",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_4898",
+          "title": "Hear You",
+          "artist": "toe",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9387",
+          "title": "The Magic Land of Radio",
+          "artist": "Obi",
+          "genre": "Folk",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9458",
+          "title": "Are You Listening?",
+          "artist": "Dolores O'Riordan",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2912",
+          "title": "Feeling The Rain",
+          "artist": "MoreanP",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2951",
+          "title": "ドラマ「ゴーイング マイ ホーム」サウンドトラック Going My Home(Soundtrack)",
+          "artist": "GONTITI, ゴンチチ",
+          "genre": "Easy Listening",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_4898",
+          "title": "Hear You",
+          "artist": "toe",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9387",
+          "title": "The Magic Land of Radio",
+          "artist": "Obi",
+          "genre": "Folk",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2951",
+          "title": "ドラマ「ゴーイング マイ ホーム」サウンドトラック Going My Home(Soundtrack)",
+          "artist": "GONTITI, ゴンチチ",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4965",
+          "title": "Black Magic",
+          "artist": "Alan Young",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4918",
+          "title": "- Radio Mix",
+          "artist": "A",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_03": {
+    "query": "good music to listen to",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_9157",
+          "title": "Radiohead: The Best Of",
+          "artist": "Radiohead",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_129",
+          "title": "BE GOOD",
+          "artist": "Koji.",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3091",
+          "title": "My Favorites",
+          "artist": "Masaaki Kishibe",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5088",
+          "title": "Atlas: Space 1",
+          "artist": "Sleeping At Last",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_419",
+          "title": "That's a good one.",
+          "artist": "CHOI Jian",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5152",
+          "title": "Hotel California",
+          "artist": "Eagles",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_1661",
+          "title": "Rolling in the Deep",
+          "artist": "Adele",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_129",
+          "title": "BE GOOD",
+          "artist": "Koji.",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5088",
+          "title": "Atlas: Space 1",
+          "artist": "Sleeping At Last",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3096",
+          "title": "Someday Somewhere",
+          "artist": "Steve Barakatt",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1516",
+          "title": "Best of Both Worlds",
+          "artist": "Josh Vietti",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5293",
+          "title": "The Very Best of Diana Krall",
+          "artist": "Diana Krall",
+          "genre": "Jazz",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_9157",
+          "title": "Radiohead: The Best Of",
+          "artist": "Radiohead",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5088",
+          "title": "Atlas: Space 1",
+          "artist": "Sleeping At Last",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5491",
+          "title": "The Last Great Concert: My Favorite Songs, Vol. 1 & 2",
+          "artist": "Chet Baker",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1516",
+          "title": "Best of Both Worlds",
+          "artist": "Josh Vietti",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3163",
+          "title": "A New World",
+          "artist": "Maksim",
+          "genre": "Easy Listening",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_04": {
+    "query": "recommend me something",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3091",
+          "title": "My Favorites",
+          "artist": "Masaaki Kishibe",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3924",
+          "title": "about me",
+          "artist": "aoki laska",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3000",
+          "title": "On the sunny weekend, on the way to school to make up for school, I met someone I liked.",
+          "artist": "AniFace",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2990",
+          "title": "My Way",
+          "artist": "Liu Xing",
+          "genre": "Classical",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1995",
+          "title": "I should.",
+          "artist": "Yang Naiwen",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3708",
+          "title": "Sunflower",
+          "artist": "Rex Orange County",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_3091",
+          "title": "My Favorites",
+          "artist": "Masaaki Kishibe",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1995",
+          "title": "I should.",
+          "artist": "Yang Naiwen",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6747",
+          "title": "Listen To Me",
+          "artist": "Zhang Ji-sung",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4301",
+          "title": "Viaggi in Aeromobile",
+          "artist": "Fabrizio Paterlini",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6276",
+          "title": "Timely!!",
+          "artist": "Apricot.",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_3000",
+          "title": "On the sunny weekend, on the way to school to make up for school, I met someone I liked.",
+          "artist": "AniFace",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6747",
+          "title": "Listen To Me",
+          "artist": "Zhang Ji-sung",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4301",
+          "title": "Viaggi in Aeromobile",
+          "artist": "Fabrizio Paterlini",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6141",
+          "title": "My Method Actor",
+          "artist": "Nilüfer Yanya",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6276",
+          "title": "Timely!!",
+          "artist": "Apricot.",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_05": {
+    "query": "classic tracks everyone knows",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_7294",
+          "title": "Almost Famous",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9213",
+          "title": "Graffiti On The Train",
+          "artist": "Stereophonics",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3337",
+          "title": "WHITE ALBUM2 ORIGINAL SOUNDTRACK～introductory～",
+          "artist": "Leaf",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4155",
+          "title": "New Silk Road",
+          "artist": "Maksim Mrvica",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7706",
+          "title": "S.E.N.S: Palace Memories",
+          "artist": "S.E.N.S",
+          "genre": "Easy Listening",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_9683",
+          "title": "Do I Wanna Know?",
+          "artist": "Arctic Monkeys",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5755",
+          "title": "Trainspotting Vol. #2",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1510",
+          "title": "Tracker",
+          "artist": "Mark Knopfler",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7706",
+          "title": "S.E.N.S: Palace Memories",
+          "artist": "S.E.N.S",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5379",
+          "title": "Camomile",
+          "artist": "Toda, Emi.",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_9683",
+          "title": "Do I Wanna Know?",
+          "artist": "Arctic Monkeys",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5755",
+          "title": "Trainspotting Vol. #2",
+          "artist": "Original Soundtrack",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1510",
+          "title": "Tracker",
+          "artist": "Mark Knopfler",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_9213",
+          "title": "Graffiti On The Train",
+          "artist": "Stereophonics",
+          "genre": "Rock",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_7706",
+          "title": "S.E.N.S: Palace Memories",
+          "artist": "S.E.N.S",
+          "genre": "Easy Listening",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_06": {
+    "query": "music like I have never heard before",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_725",
+          "title": "Never Gone",
+          "artist": "Backstreet Boys",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3121",
+          "title": "No-one's ever told.",
+          "artist": "Yiruma",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1017",
+          "title": "Simply Me",
+          "artist": "Jan Ki-hoon.",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1787",
+          "title": "Eternal Melody I",
+          "artist": "Yoshiki",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8757",
+          "title": "Same as always.",
+          "artist": "Various Aritsts",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9521",
+          "title": "Tomorrow Never Knows",
+          "artist": "The Beatles",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_9127",
+          "title": "Paranoid Android",
+          "artist": "Radiohead",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_4754",
+          "title": "We Play Endlessly",
+          "artist": "Sigur Rós",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4898",
+          "title": "Hear You",
+          "artist": "toe",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4245",
+          "title": "PIANO MEETS HIPHOP",
+          "artist": "NANASE",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_8364",
+          "title": "Whenere",
+          "artist": "Forsaken Autumn",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1787",
+          "title": "Eternal Melody I",
+          "artist": "Yoshiki",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_4754",
+          "title": "We Play Endlessly",
+          "artist": "Sigur Rós",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4898",
+          "title": "Hear You",
+          "artist": "toe",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4245",
+          "title": "PIANO MEETS HIPHOP",
+          "artist": "NANASE",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1787",
+          "title": "Eternal Melody I",
+          "artist": "Yoshiki",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1875",
+          "title": "Once (Soundtrack) Once / 《》",
+          "artist": "Glen Hansard, Marketa Irglova",
+          "genre": "Soundtrack",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_07": {
+    "query": "give me a few songs",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2760",
+          "title": "Yo, yo.",
+          "artist": "Kang Xiaoqing., Misa in town.",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1657",
+          "title": "The world gave me.",
+          "artist": "Wang Fei",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3127",
+          "title": "Best of Best 20 Songs",
+          "artist": "West Village by Kiejiang, Yukie Nishimura",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1620",
+          "title": "Flaming lips.",
+          "artist": "May Ying Fang",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8972",
+          "title": "Six songs.",
+          "artist": "Zero.",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2760",
+          "title": "Yo, yo.",
+          "artist": "Kang Xiaoqing., Misa in town.",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_209",
+          "title": "$ome $exy $ongs 4 U Some Sexy Songs 4 U",
+          "artist": "Drake, PARTYNEXTDOOR",
+          "genre": "Hip Hop/Rap",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1418",
+          "title": "Songs In A Minor / A",
+          "artist": "Alicia Keys",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2027",
+          "title": "Like Swimming",
+          "artist": "Morphine",
+          "genre": "Rock",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1372",
+          "title": "Song For The World",
+          "artist": "Tau-Yu!",
+          "genre": "Pop",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1657",
+          "title": "The world gave me.",
+          "artist": "Wang Fei",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2905",
+          "title": "Fell for U",
+          "artist": "noicybino",
+          "genre": "Easy Listening",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2741",
+          "title": "Let’s Go",
+          "artist": "Cicada",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_438",
+          "title": "Night song.",
+          "artist": "Jay Chou",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2027",
+          "title": "Like Swimming",
+          "artist": "Morphine",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_08": {
+    "query": "anything relaxing",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2750",
+          "title": "Relaxation - Honesty",
+          "artist": "Bandari",
+          "genre": "Classical",
+          "rel": 3
+        },
+        {
+          "song_id": "sid_3204",
+          "title": "--Spa Life-SPA",
+          "artist": "Windy Records",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2738",
+          "title": "The magic alpha-subsperms-sleep",
+          "artist": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2985",
+          "title": "Tenderness~best works~",
+          "artist": "Tohara-kun., Moriguchi!",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2800",
+          "title": "Serenity",
+          "artist": "Capozio",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2911",
+          "title": "Catarse",
+          "artist": "Andrei Machado",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3179",
+          "title": "H2O - A Solitudes Ambient Experience",
+          "artist": "Dan Gibson, Chris Phillips",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3690",
+          "title": "Spring daylight. Sunlight.",
+          "artist": "Soda green",
+          "genre": "Folk",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_2893",
+          "title": "Relaxing Melodies of Nature",
+          "artist": "Kenio Fuke",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2800",
+          "title": "Serenity",
+          "artist": "Capozio",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2754",
+          "title": "Bedtime Story",
+          "artist": "Wu Jian Hui",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3179",
+          "title": "H2O - A Solitudes Ambient Experience",
+          "artist": "Dan Gibson, Chris Phillips",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2880",
+          "title": "Earthsongs (Special Enhanced Edition)",
+          "artist": "The Mystery Garden.",
+          "genre": "Easy Listening",
+          "rel": 2
+        }
+      ]
+    }
+  },
+  "vague_09": {
+    "query": "songs from the old days",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3693",
+          "title": "The Old Days Feeling",
+          "artist": "Mirah",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8601",
+          "title": "I used to be an old man, and I was a 20th-year-old sound fragment.",
+          "artist": "Sound Fragment",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8164",
+          "title": "Days.",
+          "artist": "- Cole.",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7807",
+          "title": "A story of the past.",
+          "artist": "Original Soundtrack",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_9240",
+          "title": "These Are The Days",
+          "artist": "Saybia",
+          "genre": "Rock",
+          "rel": 2
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": "sid_7109",
+          "title": "In the Mood",
+          "artist": "Tyrone Davis",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_1640",
+          "title": "What A Wonderful World",
+          "artist": "Louis Armstrong",
+          "genre": "Jazz",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_5152",
+          "title": "Hotel California",
+          "artist": "Eagles",
+          "genre": "Rock",
+          "rel": 2
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_1932",
+          "title": "♪ Love the dust ♪",
+          "artist": "Old wolf.",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_6469",
+          "title": "Diana Ross",
+          "artist": "Diana Ross",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_4022",
+          "title": "Tindersticks",
+          "artist": "Tindersticks",
+          "genre": "Pop",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3649",
+          "title": "Old Goodbyes",
+          "artist": "Pajaro Sunrise",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3693",
+          "title": "The Old Days Feeling",
+          "artist": "Mirah",
+          "genre": "Folk",
+          "rel": 2
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_1932",
+          "title": "♪ Love the dust ♪",
+          "artist": "Old wolf.",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_3693",
+          "title": "The Old Days Feeling",
+          "artist": "Mirah",
+          "genre": "Folk",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_8164",
+          "title": "Days.",
+          "artist": "- Cole.",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7886",
+          "title": "Old road mood.",
+          "artist": "Liu Yuan",
+          "genre": "Classical",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6469",
+          "title": "Diana Ross",
+          "artist": "Diana Ross",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        }
+      ]
+    }
+  },
+  "vague_10": {
+    "query": "something chill to wind down",
+    "models": {
+      "baseline1_vector": [
+        {
+          "song_id": "sid_3204",
+          "title": "--Spa Life-SPA",
+          "artist": "Windy Records",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_9122",
+          "title": "Shiver",
+          "artist": "Coldplay",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2371",
+          "title": "Soon It Will Be Cold Enough",
+          "artist": "Emancipator",
+          "genre": "Electronic",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_2739",
+          "title": "♪ And the world is down ♪",
+          "artist": "- Hey, Little.",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_7841",
+          "title": "The Angry Rains of the Cold.",
+          "artist": "Network Game, Assen, Zhao Lu, Gin-kyung., Ko Twilight., The sauce., Boss Grey.",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "baseline2_llm": [
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": null,
+          "title": null,
+          "genre": null,
+          "rel": 0
+        },
+        {
+          "song_id": "sid_777",
+          "title": "Ocean Eyes",
+          "artist": "Billie Eilish",
+          "genre": "Pop",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_708",
+          "title": "Intro",
+          "artist": "Werrene.",
+          "genre": "Pop",
+          "rel": 0
+        }
+      ],
+      "full": [
+        {
+          "song_id": "sid_3204",
+          "title": "--Spa Life-SPA",
+          "artist": "Windy Records",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2371",
+          "title": "Soon It Will Be Cold Enough",
+          "artist": "Emancipator",
+          "genre": "Electronic",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3853",
+          "title": "Peaceful, The World Lays Me Down ‧",
+          "artist": "Noah And The Whale",
+          "genre": "Folk",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_6088",
+          "title": "A Quiet Storm",
+          "artist": "Smokey Robinson",
+          "genre": "Funk/Soul/R&B",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3341",
+          "title": "Snow.",
+          "artist": "Spicy.",
+          "genre": "Soundtrack",
+          "rel": 0
+        }
+      ],
+      "ablation_noprofile": [
+        {
+          "song_id": "sid_3204",
+          "title": "--Spa Life-SPA",
+          "artist": "Windy Records",
+          "genre": "Easy Listening",
+          "rel": 2
+        },
+        {
+          "song_id": "sid_2371",
+          "title": "Soon It Will Be Cold Enough",
+          "artist": "Emancipator",
+          "genre": "Electronic",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3853",
+          "title": "Peaceful, The World Lays Me Down ‧",
+          "artist": "Noah And The Whale",
+          "genre": "Folk",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_3341",
+          "title": "Snow.",
+          "artist": "Spicy.",
+          "genre": "Soundtrack",
+          "rel": 0
+        },
+        {
+          "song_id": "sid_5206",
+          "title": "This Winter Was Somber",
+          "artist": "Sleep Dealer",
+          "genre": "Rock",
+          "rel": 0
+        }
+      ]
+    }
+  }
+}
