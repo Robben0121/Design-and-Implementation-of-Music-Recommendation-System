@@ -1,0 +1,245 @@
+[
+  {
+    "id": "scene_01",
+    "text": "recommend calm instrumental music for studying",
+    "category": "scene",
+    "relevance": {"genres": ["Easy Listening", "Classical", "Soundtrack"], "tags": ["Piano", "Orchestral"], "keywords": []}
+  },
+  {
+    "id": "scene_02",
+    "text": "music for running and exercise",
+    "category": "scene",
+    "relevance": {"genres": ["Pop", "Electronic", "Rock"], "tags": ["Rhythmic", "Drums"], "keywords": []}
+  },
+  {
+    "id": "scene_03",
+    "text": "songs for sleep and bedtime",
+    "category": "scene",
+    "relevance": {"genres": ["Easy Listening", "Classical"], "tags": ["Piano", "Orchestral"], "keywords": []}
+  },
+  {
+    "id": "scene_04",
+    "text": "music for a road trip",
+    "category": "scene",
+    "relevance": {"genres": ["Pop", "Rock"], "tags": ["Guitar", "Catchy"], "keywords": []}
+  },
+  {
+    "id": "scene_05",
+    "text": "background music for a cozy cafe",
+    "category": "scene",
+    "relevance": {"genres": ["Jazz", "Easy Listening"], "tags": ["Piano", "Saxophone"], "keywords": []}
+  },
+  {
+    "id": "scene_06",
+    "text": "epic soundtrack music for a movie",
+    "category": "scene",
+    "relevance": {"genres": ["Soundtrack"], "tags": ["Orchestral"], "keywords": []}
+  },
+  {
+    "id": "scene_07",
+    "text": "music for meditation and relaxation",
+    "category": "scene",
+    "relevance": {"genres": ["Easy Listening", "Classical"], "tags": ["Piano"], "keywords": []}
+  },
+  {
+    "id": "scene_08",
+    "text": "songs for a party and dancing",
+    "category": "scene",
+    "relevance": {"genres": ["Pop", "Electronic", "Funk/Soul/R&B"], "tags": ["Rhythmic", "Catchy"], "keywords": []}
+  },
+  {
+    "id": "scene_09",
+    "text": "music to focus while working",
+    "category": "scene",
+    "relevance": {"genres": ["Easy Listening", "Classical"], "tags": ["Piano"], "keywords": []}
+  },
+  {
+    "id": "scene_10",
+    "text": "songs for a rainy day",
+    "category": "scene",
+    "relevance": {"genres": ["Easy Listening", "Jazz", "Folk"], "tags": ["Piano", "Emotional"], "keywords": []}
+  },
+
+  {
+    "id": "mood_01",
+    "text": "sad songs to heal a broken heart",
+    "category": "mood",
+    "relevance": {"genres": ["Folk", "Pop"], "tags": ["Emotional", "Narrative"], "keywords": []}
+  },
+  {
+    "id": "mood_02",
+    "text": "happy uplifting songs",
+    "category": "mood",
+    "relevance": {"genres": ["Pop"], "tags": ["Catchy", "Melodic"], "keywords": []}
+  },
+  {
+    "id": "mood_03",
+    "text": "calm relaxing music",
+    "category": "mood",
+    "relevance": {"genres": ["Easy Listening", "Classical"], "tags": ["Piano"], "keywords": []}
+  },
+  {
+    "id": "mood_04",
+    "text": "energetic motivational music",
+    "category": "mood",
+    "relevance": {"genres": ["Rock", "Electronic", "Pop"], "tags": ["Rhythmic", "Drums"], "keywords": []}
+  },
+  {
+    "id": "mood_05",
+    "text": "romantic love songs",
+    "category": "mood",
+    "relevance": {"genres": ["Pop", "Funk/Soul/R&B"], "tags": ["Melodic", "Emotional"], "keywords": []}
+  },
+  {
+    "id": "mood_06",
+    "text": "nostalgic old songs",
+    "category": "mood",
+    "relevance": {"genres": ["Pop", "Rock", "Folk"], "tags": ["Melodic", "Emotional"], "keywords": []}
+  },
+  {
+    "id": "mood_07",
+    "text": "angry aggressive music to vent",
+    "category": "mood",
+    "relevance": {"genres": ["Rock"], "tags": ["Drums", "Guitar"], "keywords": []}
+  },
+  {
+    "id": "mood_08",
+    "text": "dreamy atmospheric music",
+    "category": "mood",
+    "relevance": {"genres": ["Electronic", "Easy Listening"], "tags": ["Synth"], "keywords": []}
+  },
+  {
+    "id": "mood_09",
+    "text": "cheerful feel-good songs",
+    "category": "mood",
+    "relevance": {"genres": ["Pop"], "tags": ["Catchy", "Rhythmic"], "keywords": []}
+  },
+  {
+    "id": "mood_10",
+    "text": "melancholy piano music",
+    "category": "mood",
+    "relevance": {"genres": ["Classical", "Easy Listening"], "tags": ["Piano"], "keywords": []}
+  },
+
+  {
+    "id": "genre_01",
+    "text": "fast-paced pop songs",
+    "category": "genre",
+    "relevance": {"genres": ["Pop"], "tags": ["Rhythmic", "Catchy"], "keywords": []}
+  },
+  {
+    "id": "genre_02",
+    "text": "classical piano pieces",
+    "category": "genre",
+    "relevance": {"genres": ["Classical"], "tags": ["Piano"], "keywords": []}
+  },
+  {
+    "id": "genre_03",
+    "text": "jazz with saxophone",
+    "category": "genre",
+    "relevance": {"genres": ["Jazz"], "tags": ["Saxophone", "Improvisation"], "keywords": []}
+  },
+  {
+    "id": "genre_04",
+    "text": "electronic synth music",
+    "category": "genre",
+    "relevance": {"genres": ["Electronic"], "tags": ["Synth"], "keywords": []}
+  },
+  {
+    "id": "genre_05",
+    "text": "folk acoustic guitar",
+    "category": "genre",
+    "relevance": {"genres": ["Folk"], "tags": ["Guitar"], "keywords": []}
+  },
+  {
+    "id": "genre_06",
+    "text": "soul and R&B songs",
+    "category": "genre",
+    "relevance": {"genres": ["Funk/Soul/R&B"], "tags": ["Melodic"], "keywords": []}
+  },
+  {
+    "id": "genre_07",
+    "text": "hip hop rap music",
+    "category": "genre",
+    "relevance": {"genres": ["Hip Hop/Rap"], "tags": ["Hip Hop"], "keywords": []}
+  },
+  {
+    "id": "genre_08",
+    "text": "blues guitar music",
+    "category": "genre",
+    "relevance": {"genres": ["Blues"], "tags": ["Guitar"], "keywords": []}
+  },
+  {
+    "id": "genre_09",
+    "text": "world music from different cultures",
+    "category": "genre",
+    "relevance": {"genres": ["World Music"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "genre_10",
+    "text": "live concert recordings",
+    "category": "genre",
+    "relevance": {"genres": ["Rock", "Pop", "Jazz"], "tags": ["Live"], "keywords": []}
+  },
+
+  {
+    "id": "vague_01",
+    "text": "some interesting old songs",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Pop", "Rock", "Folk", "Jazz", "Blues"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_02",
+    "text": "something different to listen to",
+    "category": "ambiguous",
+    "relevance": {"genres": ["World Music", "Electronic", "Jazz"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_03",
+    "text": "good music to listen to",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Pop", "Rock"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_04",
+    "text": "recommend me something",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Pop"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_05",
+    "text": "classic tracks everyone knows",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Rock", "Pop"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_06",
+    "text": "music like I have never heard before",
+    "category": "ambiguous",
+    "relevance": {"genres": ["World Music", "Electronic"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_07",
+    "text": "give me a few songs",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Pop"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_08",
+    "text": "anything relaxing",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Easy Listening", "Classical", "Jazz"], "tags": ["Piano"], "keywords": []}
+  },
+  {
+    "id": "vague_09",
+    "text": "songs from the old days",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Rock", "Pop", "Folk", "Blues", "Jazz"], "tags": [], "keywords": []}
+  },
+  {
+    "id": "vague_10",
+    "text": "something chill to wind down",
+    "category": "ambiguous",
+    "relevance": {"genres": ["Easy Listening", "Jazz"], "tags": ["Piano", "Saxophone"], "keywords": []}
+  }
+]
