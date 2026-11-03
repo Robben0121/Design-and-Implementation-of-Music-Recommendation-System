@@ -43,51 +43,68 @@ class LLMRecommendationEngine:
         
         logger.info("LLM推荐引擎初始化完成（集成TempChain-ExRec）")
     
-    def extract_user_preferences(self, user_message: str, 
-                                conversation_history: List[str] = None) -> Dict:
+    def extract_user_preferences(self, user_message: str,
+                                conversation_history: List[Dict] = None) -> Dict:
         """
-        从用户消息中提取偏好信息
-        
+        从用户消息中提取偏好信息（支持场景推断 + 对话上下文）
+
         Returns:
             提取的偏好字典
         """
-        system_prompt = """你是一个音乐偏好分析专家。从用户的对话中提取他们的音乐偏好信息。
+        system_prompt = """You are a music preference analysis expert. Extract music preferences from the user's message.
 
-请以JSON格式返回提取结果，包含以下字段（如果用户没提到就留空）：
+Rules:
+1. Only extract preferences the user explicitly stated or that can be reasonably inferred; leave undetermined fields empty.
+2. Infer mood, tempo and genre from the scenario, e.g.:
+   - exercise/running/gym -> moods:["energetic","upbeat"], tempo:"fast", genres:["Electronic","Rock","Pop"]
+   - studying/working/reading -> moods:["calm","focused"], tempo:"slow", genres:["Classical","Easy Listening","Soundtrack"]
+   - sleep/bedtime -> moods:["peaceful","relaxed"], tempo:"slow", genres:["Easy Listening","Classical","Jazz"]
+   - sad/heartbreak -> moods:["melancholy","emotional"], tempo:"slow", genres:["Folk","Pop"]
+   - driving/travel -> moods:["easygoing","happy"], tempo:"medium", genres:["Pop","Rock"]
+3. Use English for genre/mood/tag/context values, and stick to common labels the music database uses (e.g. Pop, Rock, Electronic, Folk, Jazz, Classical, Soundtrack, Easy Listening, Melodic, Catchy, Emotional, Rhythmic).
+4. "confidence" reflects certainty: 0.8-1.0 for explicitly stated preferences, 0.4-0.6 for scenario-inferred ones.
+
+Return JSON only (no other text):
 {
-    "genres": ["流派1", "流派2"],
-    "artists": ["歌手1", "歌手2"],
-    "tags": ["标签1", "标签2"],
-    "moods": ["情绪1", "情绪2"],
-    "context": "场景",
-    "tempo": "节奏",
-    "vocal": "人声",
-    "year_preference": "年代偏好",
-    "language": ["语言偏好"]
-}
+    "genres": ["genre1"],
+    "artists": ["artist1"],
+    "tags": ["tag1"],
+    "moods": ["mood1"],
+    "context": "scenario",
+    "tempo": "tempo",
+    "vocal": "vocal",
+    "year_preference": "year preference",
+    "language": ["language preference"],
+    "confidence": 0.8
+}"""
 
-只返回JSON，不要其他文字。"""
-        
         try:
+            messages = [{"role": "system", "content": system_prompt}]
+            if conversation_history:
+                history_text = "\n".join(
+                    f"{'用户' if m.get('role') == 'user' else '助手'}: {m.get('content', '')}"
+                    for m in conversation_history[-6:]
+                )
+                messages.append({"role": "user", "content": f"对话上下文：\n{history_text}\n\n当前用户消息：{user_message}"})
+            else:
+                messages.append({"role": "user", "content": user_message})
+
             response = self.client.chat.completions.create(
                 model=self.model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_message}
-                ],
+                messages=messages,
                 temperature=0.3
             )
-            
+
             content = response.choices[0].message.content.strip()
             if content.startswith("```json"):
                 content = content.split("```json")[1].split("```")[0].strip()
             elif content.startswith("```"):
                 content = content.split("```")[1].split("```")[0].strip()
-            
+
             preferences = json.loads(content)
             logger.info(f"提取的用户偏好: {preferences}")
             return preferences
-            
+
         except Exception as e:
             logger.error(f"提取用户偏好失败: {e}")
             return {}
@@ -121,7 +138,7 @@ class LLMRecommendationEngine:
             logger.warning("未检索到相关歌曲")
             return {
                 'recommendations': [],
-                'reasoning': '抱歉，没有找到符合您需求的歌曲。',
+                'reasoning': 'Sorry, no songs matching your request were found.',
                 'retrieved_count': 0
             }
         
@@ -145,8 +162,139 @@ class LLMRecommendationEngine:
             'reasoning': recommendations['explanation'],
             'retrieved_count': len(retrieved)
         }
-    
-    def _build_enhanced_query(self, user_query: str, 
+
+    # ==================== Baseline 2: pure LLM recommendation (no RAG) ====================
+
+    def _get_db_title_index(self) -> Dict:
+        """Lazily build a normalized title/artist index over the music DB (used to map
+        LLM-generated song titles back to database items)."""
+        if getattr(self, '_db_index', None) is not None:
+            return self._db_index
+
+        import re
+
+        def norm(s: str) -> str:
+            s = re.sub(r'[^a-z0-9 ]', '', (s or '').lower())
+            return re.sub(r'\s+', ' ', s).strip()
+
+        db = self.vector_engine.music_db
+        by_title: Dict[str, List[MusicItem]] = {}
+        norm_titles = []
+        norm_artists = []
+        for item in db.music_items:
+            nt = norm(item.song)
+            by_title.setdefault(nt, []).append(item)
+            norm_titles.append(nt)
+            norm_artists.append(norm(item.artist))
+
+        self._db_index = {
+            'items': db.music_items,
+            'by_title': by_title,
+            'norm_titles': norm_titles,
+            'norm_artists': norm_artists,
+        }
+        return self._db_index
+
+    def _match_song_in_db(self, title: str, artist: str) -> Optional[MusicItem]:
+        """Map an LLM-generated (title, artist) back to a DB item (exact -> fuzzy)."""
+        import re
+        from difflib import SequenceMatcher
+
+        def norm(s: str) -> str:
+            s = re.sub(r'[^a-z0-9 ]', '', (s or '').lower())
+            return re.sub(r'\s+', ' ', s).strip()
+
+        idx = self._get_db_title_index()
+        nt, na = norm(title), norm(artist)
+
+        # 1) exact title match (prefer matching artist when both present)
+        exact = idx['by_title'].get(nt, [])
+        if exact:
+            for item in exact:
+                if not na or norm(item.artist) == na:
+                    return item
+            return exact[0]
+
+        # 2) fuzzy title (+artist) match, cheap first-char prefilter
+        best, best_score = None, 0.0
+        for item, it, ia in zip(idx['items'], idx['norm_titles'], idx['norm_artists']):
+            if not nt or not it or nt[0] != it[0]:
+                continue
+            ts = SequenceMatcher(None, it, nt).ratio()
+            score = ts
+            if na and ia:
+                score = 0.7 * ts + 0.3 * SequenceMatcher(None, ia, na).ratio()
+            if score > best_score:
+                best_score, best = score, item
+        if best is not None and best_score >= 0.85:
+            return best
+        return None
+
+    def recommend_songs_llm_only(self, user_query: str, top_k: int = 10) -> Dict:
+        """
+        Baseline 2: pure LLM recommendation with NO retrieval (RAG disabled).
+
+        The model generates song titles/artists from its own knowledge; we map them
+        back to database items where possible and count unmatched entries as
+        hallucinations (returned as None slots in `songs`).
+
+        Returns:
+            {
+                'songs': [MusicItem or None, ...],  # len == top_k (None = hallucinated slot)
+                'hallucinated': int,
+                'raw': [{'title': str, 'artist': str}, ...]
+            }
+        """
+        system_prompt = """You are a music recommendation assistant. Recommend specific real songs based ONLY on the user's request, using your own knowledge of real songs. Do NOT search any database.
+
+Return JSON only:
+{
+    "songs": [
+        {"title": "Song Name", "artist": "Artist Name"}
+    ]
+}"""
+        user_prompt = f"Recommend {top_k} specific real songs for the request: {user_query}"
+
+        raw_songs = []
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt},
+                ],
+                temperature=0.7,
+            )
+            content = response.choices[0].message.content.strip()
+            if content.startswith("```json"):
+                content = content.split("```json")[1].split("```")[0].strip()
+            elif content.startswith("```"):
+                content = content.split("```")[1].split("```")[0].strip()
+            data = json.loads(content)
+            raw_songs = data.get("songs", [])
+        except Exception as e:
+            logger.error(f"Baseline2 (LLM-only) failed: {e}")
+
+        songs: List[Optional[MusicItem]] = []
+        raw = []
+        hallucinated = 0
+        for entry in raw_songs[:top_k]:
+            title = str(entry.get("title", "")).strip()
+            artist = str(entry.get("artist", "")).strip()
+            raw.append({"title": title, "artist": artist})
+            item = self._match_song_in_db(title, artist) if title else None
+            if item is not None:
+                songs.append(item)
+            else:
+                songs.append(None)
+                hallucinated += 1
+
+        while len(songs) < top_k:
+            songs.append(None)
+
+        return {"songs": songs, "hallucinated": hallucinated, "raw": raw}
+
+    def _build_enhanced_query(self, user_query: str,
                              user_profile: Optional[UserProfile]) -> str:
         """构建增强查询"""
         if not user_profile or not user_profile.preferences.favorite_genres:
@@ -154,9 +302,9 @@ class LLMRecommendationEngine:
         
         preferences = []
         if user_profile.preferences.favorite_genres:
-            preferences.append(f"偏好流派: {', '.join(user_profile.preferences.favorite_genres[:3])}")
+            preferences.append(f"Favorite genres: {', '.join(user_profile.preferences.favorite_genres[:3])}")
         if user_profile.preferences.moods:
-            preferences.append(f"情绪偏好: {', '.join(user_profile.preferences.moods[:2])}")
+            preferences.append(f"Mood preferences: {', '.join(user_profile.preferences.moods[:2])}")
         
         if preferences:
             enhanced = f"{user_query}。{' '.join(preferences)}"
@@ -177,39 +325,39 @@ class LLMRecommendationEngine:
         for i, item in enumerate(retrieved_items[:20], 1):
             candidates_text += f"""
 {i}. 《{item.song}》 - {item.artist}
-   专辑：{item.album}
-   风格：{item.genre} | 年份：{item.year}
-   标签：{', '.join(item.tags[:5])}
-   特点：{item.semantic_summary}
+   Album: {item.album}
+   Genre: {item.genre} | Year: {item.year}
+   Tags: {', '.join(item.tags[:5])}
+   Description: {item.semantic_summary}
 """
         
         # 构建用户画像信息
         profile_info = ""
         if user_profile:
-            profile_info = f"\n用户偏好：\n{user_profile.get_preference_summary()}\n"
+            profile_info = f"\nUser preferences:\n{user_profile.get_preference_summary()}\n"
         
-        system_prompt = """你是一位资深音乐推荐专家。
+        system_prompt = """You are a senior music recommendation expert.
 
-请根据用户的需求和偏好，从候选歌曲中选出最合适的歌曲。
+Select the most suitable songs from the candidates based on the user's needs and preferences.
 
-要求：
-1. 返回JSON格式，包含 "recommended_songs" 和 "explanation" 两个字段
-2. recommended_songs 是一个列表，每个元素是候选歌曲的编号
-3. explanation 是一段简洁的推荐理由（50-100字）
-4. 考虑音乐的多样性
+Requirements:
+1. Return JSON with "recommended_songs" and "explanation" fields
+2. recommended_songs is a list of candidate song numbers
+3. explanation is a concise recommendation reason (50-100 words)
+4. Consider diversity of music
 
-示例输出：
+Example output:
 {
     "recommended_songs": [3, 7, 1, 10, 15],
-    "explanation": "根据您的需求为您推荐了这些歌曲..."
+    "explanation": "Here are some songs recommended for you..."
 }"""
         
-        user_prompt = f"""用户需求：{user_query}
+        user_prompt = f"""User request: {user_query}
 {profile_info}
-候选歌曲：
+Candidate songs:
 {candidates_text}
 
-请从以上候选歌曲中选出最合适的 {top_k} 首歌曲进行推荐。"""
+Select the {top_k} most suitable songs from the candidates above."""
         
         try:
             response = self.client.chat.completions.create(
@@ -239,9 +387,9 @@ class LLMRecommendationEngine:
             
             if not recommended_songs:
                 recommended_songs = retrieved_items[:top_k]
-                explanation = "为您推荐了检索到的相关歌曲。"
+                explanation = "Here are some retrieved songs that may match your request."
             else:
-                explanation = result.get('explanation', '根据您的需求为您推荐了这些歌曲。')
+                explanation = result.get('explanation', 'Here are some songs recommended for you.')
             
             return {
                 'songs': recommended_songs,
@@ -252,7 +400,7 @@ class LLMRecommendationEngine:
             logger.error(f"LLM重排序失败: {e}")
             return {
                 'songs': retrieved_items[:top_k],
-                'explanation': '为您推荐了以下相关歌曲。'
+                'explanation': 'Here are some related songs recommended for you.'
             }
     
     # ==================== 【新增】TempChain-ExRec可解释性方法 ====================
@@ -398,20 +546,50 @@ class LLMRecommendationEngine:
     
     # ==================== 原有对话方法 ====================
     
-    def chat_with_context(self, 
+    def is_recommendation_request(self, user_message: str,
+                                  conversation_history: List[Dict] = None) -> bool:
+        """判断用户消息是否为推荐请求（识别无显式关键词的追问/改写，如「跑步时」「安静一点的」）。"""
+        system_prompt = """You are an intent detector. Decide whether the user's message is a request for music recommendation, including:
+- Direct requests (recommend / give me some / do you have any songs for ...)
+- Refining, narrowing or modifying a previous request (e.g. "for running", "something calmer", "another batch", "Chinese songs")
+
+Return JSON only: {"recommend": true} or {"recommend": false}. No other text."""
+        messages = [{"role": "system", "content": system_prompt}]
+        if conversation_history:
+            messages.extend(conversation_history[-4:])
+        messages.append({"role": "user", "content": user_message})
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=messages,
+                temperature=0.0
+            )
+            content = response.choices[0].message.content.strip()
+            if content.startswith("```"):
+                content = content.split("```")[1].strip()
+                if content.startswith("json"):
+                    content = content[4:].strip()
+            data = json.loads(content)
+            return bool(data.get("recommend", False))
+        except Exception as e:
+            logger.error(f"意图识别失败: {e}")
+            return False
+
+    def chat_with_context(self,
                          user_message: str,
                          conversation_history: List[Dict] = None) -> str:
         """与用户对话"""
-        system_prompt = """你是一个友好的音乐推荐助手。你的任务是：
-1. 理解用户的音乐需求和偏好
-2. 通过自然对话收集用户信息（但不要问太多问题）
-3. 提供个性化的音乐推荐
-4. 用轻松愉快的语气与用户交流
+        system_prompt = """You are a friendly music recommendation assistant. Your tasks:
+1. Understand the user's music needs and preferences
+2. Gather information through natural conversation (but don't ask too many questions)
+3. Provide personalized music recommendations
+4. Use a light, friendly tone
 
-注意：
-- 不要一次问太多问题，最多问1-2个
-- 如果用户的需求已经明确，直接推荐即可
-- 回复简洁自然，不要太正式
+Notes:
+- Ask at most 1-2 questions at a time
+- Recommend directly when the user's need is already clear
+- Keep replies concise and natural
 """
         
         messages = [{"role": "system", "content": system_prompt}]
@@ -432,4 +610,4 @@ class LLMRecommendationEngine:
             
         except Exception as e:
             logger.error(f"对话生成失败: {e}")
-            return "抱歉，我遇到了一些问题。能再说一遍吗？"
+            return "Sorry, I ran into a problem. Could you repeat that?"

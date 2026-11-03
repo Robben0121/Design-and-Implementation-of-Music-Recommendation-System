@@ -93,13 +93,13 @@ class MusicRecommendationApp:
                     chat_history.append({"role": "assistant", "content": response})
                     return "", chat_history
             
-            # 1. 提取用户偏好
-            extracted_prefs = self.llm_engine.extract_user_preferences(user_message)
+            # 1. 提取用户偏好（带对话上下文）
+            extracted_prefs = self.llm_engine.extract_user_preferences(user_message, chat_history[-6:])
             if extracted_prefs:
                 current_user.update_preferences_from_text(extracted_prefs)
-            
-            # 2. 判断用户意图
-            needs_recommendation = self._check_if_needs_recommendation(user_message)
+
+            # 2. 判断用户意图（带对话上下文）
+            needs_recommendation = self._check_if_needs_recommendation(user_message, chat_history[-6:])
             
             if needs_recommendation:
                 # 【修改】生成混合推荐（内容 + 协同过滤）
@@ -262,13 +262,20 @@ class MusicRecommendationApp:
         
         return detailed_explanation
     
-    def _check_if_needs_recommendation(self, message: str) -> bool:
-        """Determine whether a recommendation should be generated."""
+    def _check_if_needs_recommendation(self, message: str, conversation_history: List = None) -> bool:
+        """判断是否需要生成推荐（中英文关键词 + LLM 兜底识别追问/改写）。"""
         keywords = [
+            # 英文
             'recommend', 'song', 'music', 'listen', 'find', 'want', 'give me',
-            'play', 'any', 'suggest', 'track', 'playlist'
+            'play', 'any', 'suggest', 'track', 'playlist',
+            # 中文
+            '推荐', '歌曲', '音乐', '想听', '给我', '播放', '建议',
+            '来几首', '来点', '来一首', '来首', '适合', '有没有', '换一批', '换一首', '歌单',
         ]
-        return any(keyword in message.lower() for keyword in keywords)
+        if any(k in message.lower() for k in keywords):
+            return True
+        # LLM 兜底：识别没有显式关键词的追问/改写（如「跑步时」「安静一点的」）
+        return self.llm_engine.is_recommendation_request(message, conversation_history)
     
     def _handle_explain_request(self, message: str, user_id: str) -> Optional[str]:
         """
@@ -290,9 +297,8 @@ class MusicRecommendationApp:
         # Try to extract the requested song number
         import re
         numbers = re.findall(r'(?:song|track|#|no\.?|number)?\s*(\d+)', message, flags=re.IGNORECASE)
-        extracted = [num for group in numbers for num in group if num]
-        
-        if not extracted:
+
+        if not numbers:
             # If no explicit number is provided, maybe the user wants full explanation
             if "all" in message.lower() or "every" in message.lower():
                 logger.info(f"User requested detailed explanation for all recommendations ({len(cached['songs'])} songs)")
@@ -308,7 +314,7 @@ class MusicRecommendationApp:
             return None
         
         # Use the first extracted number
-        song_num = int(extracted[0])
+        song_num = int(numbers[0])
         
         # Validate the requested index
         if not (1 <= song_num <= len(cached['songs'])):
@@ -589,52 +595,80 @@ class MusicRecommendationApp:
     def create_gradio_interface(self):
         """Create the Gradio interface."""
 
-        # 自定义 CSS - 为聊天窗口添加可调整大小的功能
+        # 自定义 CSS - 现代化视觉 + 响应式布局
         self.custom_css = """
-        /* 为聊天窗口容器添加可调整大小的样式 */
+        /* ===== 全局背景 ===== */
+        body, .gradio-container {
+            background: linear-gradient(135deg, #f6f3ff 0%, #efe9fe 45%, #fdf1fb 100%) !important;
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+        }
+        .gradio-container { max-width: 1440px !important; margin: 0 auto !important; }
+
+        /* ===== 顶部 Hero 标题 ===== */
+        #hero {
+            background: linear-gradient(120deg, #6d28d9 0%, #8b5cf6 45%, #db2777 100%);
+            color: #fff !important;
+            padding: 2rem 2.5rem !important;
+            border-radius: 18px !important;
+            margin-bottom: 1.2rem !important;
+            box-shadow: 0 14px 34px rgba(109, 40, 217, 0.28);
+        }
+        #hero h1 { color: #fff !important; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 0.4rem; }
+        #hero h3, #hero p { color: rgba(255, 255, 255, 0.92) !important; font-weight: 400; }
+
+        /* ===== 卡片面板 ===== */
+        .panel {
+            background: rgba(255, 255, 255, 0.85) !important;
+            border: 1px solid rgba(255, 255, 255, 0.7) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 8px 24px rgba(76, 29, 149, 0.08) !important;
+            padding: 1rem !important;
+        }
+        .auth-card { max-width: 560px !important; margin: 0 auto !important; }
+
+        /* ===== 按钮 ===== */
+        button {
+            border-radius: 12px !important;
+            font-weight: 600 !important;
+            transition: transform .15s ease, box-shadow .15s ease !important;
+        }
+        button:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12) !important; }
+        button.primary {
+            background: linear-gradient(135deg, #7c3aed, #a855f7) !important;
+            border: none !important;
+            color: #fff !important;
+        }
+
+        /* ===== 聊天窗口（修复移动端横向溢出）===== */
         .chatbot-container {
-            resize: both !important;
-            overflow: auto !important;
-            min-width: 400px !important;
-            min-height: 300px !important;
-            max-width: 100% !important;
-            max-height: 800px !important;
+            min-width: 0 !important;
+            width: 100% !important;
+            min-height: 420px !important;
+            max-height: 720px !important;
+            border-radius: 14px !important;
         }
 
-        /* 添加调整手柄的视觉提示 */
-        .chatbot-container::after {
-            content: "";
-            position: absolute;
-            bottom: 2px;
-            right: 2px;
-            width: 10px;
-            height: 10px;
-            background: linear-gradient(135deg, transparent 50%, #666 50%);
-            cursor: se-resize;
-            pointer-events: none;
-        }
-
-        /* 用户画像区域也可调整大小 */
+        /* ===== 用户画像面板 ===== */
         .profile-container {
-            resize: vertical !important;
-            overflow: auto !important;
+            min-width: 0 !important;
             min-height: 200px !important;
-            max-height: 600px !important;
+            max-height: 560px !important;
+            overflow: auto !important;
         }
 
-        /* 添加调整大小的视觉提示 */
-        .profile-container::after {
-            content: "";
-            position: absolute;
-            bottom: 2px;
-            right: 2px;
-            width: 10px;
-            height: 10px;
-            background: linear-gradient(135deg, transparent 50%, #666 50%);
-            cursor: s-resize;
-            pointer-events: none;
+        /* ===== 响应式 ===== */
+        @media (max-width: 900px) {
+            #hero { padding: 1.2rem 1.4rem !important; }
+            #hero h1 { font-size: 1.35rem !important; }
         }
         """
+
+        # 主题：Gradio 6 需在 launch() 传入，先存到 self
+        self.theme = gr.themes.Soft(
+            primary_hue="violet",
+            secondary_hue="fuchsia",
+            neutral_hue="slate",
+        )
 
         with gr.Blocks(title="🎵 Smart Music Recommendation System") as demo:
 
@@ -643,12 +677,12 @@ class MusicRecommendationApp:
             username_state = gr.State("")
             
             gr.Markdown("""
-            # 🎵 Smart Music Recommendation System
-            > Personalized recommendations powered by LLM + collaborative filtering + explainability
-            """)
+# 🎵 智能音乐推荐系统
+### LLM · 协同过滤 · 可解释推荐
+""", elem_id="hero")
             
             # ========== Login / Register Section ==========
-            with gr.Group(visible=True) as login_section:
+            with gr.Group(visible=True, elem_classes=["panel", "auth-card"]) as login_section:
                 gr.Markdown("### 👤 User Login")
                 
                 with gr.Tabs():
@@ -668,7 +702,7 @@ class MusicRecommendationApp:
                 guest_btn = gr.Button("🎭 Guest Mode (No registration, no persistence)", variant="secondary")
             
             # ========== 主界面区域 ==========
-            with gr.Group(visible=False) as main_section:
+            with gr.Group(visible=False, elem_classes=["panel"]) as main_section:
                 
                 with gr.Row():
                     user_display = gr.Markdown("", elem_id="user_display")
@@ -890,7 +924,7 @@ def main():
     try:
         app = MusicRecommendationApp()
         demo = app.create_gradio_interface()
-        demo.launch(share=True, inbrowser=True, css=app.custom_css)
+        demo.launch(share=True, inbrowser=True, css=app.custom_css, theme=app.theme)
         
     except Exception as e:
         logger.error(f"Application failed to start: {e}")

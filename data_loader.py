@@ -23,27 +23,27 @@ class MusicItem(BaseModel):
         # 组合多个字段，用于生成更丰富的语义向量
         tags_str = ", ".join(self.tags)
         text = f"""
-歌曲：{self.song}
-歌手：{self.artist}
-专辑：{self.album}
-风格：{self.genre}
-年代：{self.year}
-标签：{tags_str}
-语义摘要：{self.semantic_summary}
-描述：{self.description}
+Song: {self.song}
+Artist: {self.artist}
+Album: {self.album}
+Genre: {self.genre}
+Year: {self.year}
+Tags: {tags_str}
+Summary: {self.semantic_summary}
+Description: {self.description}
         """.strip()
         return text
-    
+
     def to_display_format(self) -> Dict:
         """转换为前端展示格式"""
         return {
-            "歌曲名": self.song,
-            "歌手": self.artist,
-            "专辑": self.album,
-            "风格": self.genre,
-            "年份": self.year,
-            "标签": ", ".join(self.tags),
-            "推荐理由": self.semantic_summary
+            "Song": self.song,
+            "Artist": self.artist,
+            "Album": self.album,
+            "Genre": self.genre,
+            "Year": self.year,
+            "Tags": ", ".join(self.tags),
+            "Reason": self.semantic_summary
         }
 
 

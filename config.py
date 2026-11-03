@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     DEEPSEEK_MODEL: str = "deepseek-chat"
     
     # ==================== 数据路径配置 ====================
-    MUSIC_DATA_PATH: str = "./data/music_data.json"
+    MUSIC_DATA_PATH: str = "./data/music_database.json"
     USER_PROFILE_DIR: str = "./data/user_profiles"
     VECTOR_DB_PATH: str = "./data/vector_db"
     

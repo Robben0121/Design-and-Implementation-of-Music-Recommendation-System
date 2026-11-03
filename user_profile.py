@@ -253,43 +253,43 @@ class UserProfile:
         self.save_profile()
     
     def get_preference_summary(self) -> str:
-        """获取用户偏好摘要"""
+        """Get user preference summary."""
         summary_parts = []
-        
+
         if self.preferences.favorite_genres:
-            summary_parts.append(f"喜欢的流派：{', '.join(self.preferences.favorite_genres)}")
-        
+            summary_parts.append(f"Favorite genres: {', '.join(self.preferences.favorite_genres)}")
+
         if self.preferences.favorite_artists:
-            summary_parts.append(f"喜欢的歌手：{', '.join(self.preferences.favorite_artists[:10])}")
-        
+            summary_parts.append(f"Favorite artists: {', '.join(self.preferences.favorite_artists[:10])}")
+
         if self.preferences.favorite_tags:
-            summary_parts.append(f"喜欢的标签：{', '.join(self.preferences.favorite_tags)}")
-        
+            summary_parts.append(f"Favorite tags: {', '.join(self.preferences.favorite_tags)}")
+
         if self.preferences.moods:
-            summary_parts.append(f"情绪偏好：{', '.join(self.preferences.moods)}")
-        
+            summary_parts.append(f"Mood preferences: {', '.join(self.preferences.moods)}")
+
         if self.preferences.listening_contexts:
-            summary_parts.append(f"听歌场景：{', '.join(self.preferences.listening_contexts)}")
-        
+            summary_parts.append(f"Listening contexts: {', '.join(self.preferences.listening_contexts)}")
+
         if self.preferences.tempo_preference:
-            summary_parts.append(f"节奏偏好：{self.preferences.tempo_preference}")
-        
+            summary_parts.append(f"Tempo preference: {self.preferences.tempo_preference}")
+
         if self.preferences.vocal_preference:
-            summary_parts.append(f"人声偏好：{self.preferences.vocal_preference}")
-        
-        # 新增：会话上下文信息
+            summary_parts.append(f"Vocal preference: {self.preferences.vocal_preference}")
+
+        # Session context
         if self.session:
             if self.session.current_mood:
-                summary_parts.append(f"当前心情：{self.session.current_mood}")
+                summary_parts.append(f"Current mood: {self.session.current_mood}")
             if self.session.current_context:
-                summary_parts.append(f"当前场景：{self.session.current_context}")
-        
+                summary_parts.append(f"Current context: {self.session.current_context}")
+
         if self.liked_songs:
-            summary_parts.append(f"已收藏歌曲数：{len(self.liked_songs)}")
-        
+            summary_parts.append(f"Liked songs: {len(self.liked_songs)}")
+
         if not summary_parts:
-            return "暂无用户偏好信息"
-        
+            return "No preference information yet."
+
         return "\n".join(summary_parts)
     
     def get_filter_conditions(self) -> Dict:
@@ -381,17 +381,17 @@ class UserManager:
         Returns:
             (success, message, user_id)
         """
-        # 验证用户名
+        # Validate username
         if not username or len(username) < 2:
-            return False, "用户名至少2个字符", None
+            return False, "Username must be at least 2 characters.", None
         if len(username) > 20:
-            return False, "用户名最多20个字符", None
+            return False, "Username must be at most 20 characters.", None
         if username in self.user_index:
-            return False, "用户名已存在", None
-        
-        # 验证密码
+            return False, "Username already exists.", None
+
+        # Validate password
         if not password or len(password) < 4:
-            return False, "密码至少4个字符", None
+            return False, "Password must be at least 4 characters.", None
         
         # 生成用户ID
         user_id = str(uuid.uuid4())[:8]
@@ -413,7 +413,7 @@ class UserManager:
         self._save_index()
         
         logger.info(f"新用户注册: {username} (ID: {user_id})")
-        return True, "注册成功", user_id
+        return True, "Registration successful.", user_id
     
     def login(self, username: str, password: str) -> tuple[bool, str, Optional[UserProfile]]:
         """
@@ -424,27 +424,27 @@ class UserManager:
         """
         # 检查用户是否存在
         if username not in self.user_index:
-            return False, "用户不存在", None
+            return False, "User does not exist.", None
         
         user_id = self.user_index[username]
         
         # 验证密码
         pwd_path = self._get_password_path(user_id)
         if not os.path.exists(pwd_path):
-            return False, "账户数据异常", None
+            return False, "Account data error.", None
         
         with open(pwd_path, 'r') as f:
             stored_hash = f.read().strip()
         
         if self._hash_password(password) != stored_hash:
-            return False, "密码错误", None
+            return False, "Incorrect password.", None
         
         # 加载用户画像
         profile = self.get_user_profile(user_id)
         profile.start_session()
         
         logger.info(f"用户登录: {username} (ID: {user_id})")
-        return True, "登录成功", profile
+        return True, "Login successful.", profile
     
     def guest_login(self) -> UserProfile:
         """
@@ -454,7 +454,7 @@ class UserManager:
             UserProfile
         """
         guest_id = f"guest_{str(uuid.uuid4())[:6]}"
-        guest_name = f"游客_{guest_id[-4:]}"
+        guest_name = f"Guest_{guest_id[-4:]}"
         
         profile = UserProfile(
             user_id=guest_id,
